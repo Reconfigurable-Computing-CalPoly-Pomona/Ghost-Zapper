@@ -9,6 +9,61 @@
 
 #include "sseg_core.h"
 
+static const uint8_t PTN_LETTER_TABLE[26] {
+		   	0x88, /* A */
+
+		   	0x83, /* B */
+
+		   	0xc6, /* C */
+
+		   	0xa1, /* D */
+
+		   	0x86, /* E */
+
+		   	0x8e, /* F */
+
+		   	0xc2, /* G */
+
+		   	0x89, /* H */
+
+		   	0xf9, /* I */
+
+		   	0xe1, /* J */
+
+		   	0x8a, /* K */
+
+		   	0xc7, /* L */
+
+		   	0xea, /* M */
+
+		   	0xc8, /* N */
+
+		   	0xc0, /* O */
+
+		   	0x8c, /* P */
+
+		   	0x94, /* Q */
+
+		   	0xcc, /* R */
+
+		   	0x92, /* S */
+
+		   	0x87, /* T */
+
+		   	0xc1, /* U */
+
+		   	0xc1, /* V */
+
+		   	0xd5, /* W */
+
+		   	0x89, /* X */
+
+		   	0x11, /* Y */
+
+		   	0xa4, /* Z */
+	   };//
+
+
 SsegCore::SsegCore(uint32_t core_base_addr) {
    // pattern for "HI"; the order in array is reversed in 7-seg display
    // i.e., HI_PTN[0] is the leftmost led
@@ -77,6 +132,7 @@ uint8_t SsegCore::h2s(int hex) {
    static const uint8_t PTN_TABLE[16] =
      {0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90, //0-9
       0x88, 0x83, 0xc6, 0xa1, 0x86, 0x8e };                       //a-f
+
    uint8_t ptn;
 
    if (hex < 16)
@@ -84,4 +140,9 @@ uint8_t SsegCore::h2s(int hex) {
    else
       ptn = 0xff;
    return (ptn);
+}
+
+
+uint8_t SsegCore::d2l(uint8_t letterNum){
+	   return PTN_LETTER_TABLE[letterNum-1];
 }

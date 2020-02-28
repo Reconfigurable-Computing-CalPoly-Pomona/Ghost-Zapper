@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>FinalProject_Imp</name>
-	<comment>Created by SDK v2019.1. FinalProjectbsp - microblaze_I</comment>
+	<name>FP_Yeetus_Imp</name>
+	<comment>Created by SDK v2019.1. FP_Yeetus_BSP - microblaze_I</comment>
 	<projects>
-		<project>FinalProjectbsp</project>
+		<project>FP_Yeetus_BSP</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -70,6 +70,9 @@ public:
     */
    void set_dp(uint8_t pt);
 
+   uint8_t d2l(uint8_t letterNum);
+
+
 private:
    /* variable to keep track of current status */
    uint32_t base_addr;
@@ -80,4 +83,4 @@ private:
 }
 ;
 
-#endif  // _SSEG_CORE_H_INCLUDED
+#endif  // _SSEG_CORE_H_INCLUDED

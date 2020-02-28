@@ -37,29 +37,29 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 ELFSIZE += \
-FinalProject_Imp.elf.size \
+FP_Yeetus_Imp.elf.size \
 
 
 # All Target
-all: FinalProject_Imp.elf secondary-outputs
+all: FP_Yeetus_Imp.elf secondary-outputs
 
 # Tool invocations
-FinalProject_Imp.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
+FP_Yeetus_Imp.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MicroBlaze g++ linker'
-	mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../FinalProjectbsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FinalProject_Imp.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../FP_Yeetus_BSP/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FP_Yeetus_Imp.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-FinalProject_Imp.elf.size: FinalProject_Imp.elf
+FP_Yeetus_Imp.elf.size: FP_Yeetus_Imp.elf
 	@echo 'Invoking: MicroBlaze Print Size'
-	mb-size FinalProject_Imp.elf  |tee "FinalProject_Imp.elf.size"
+	mb-size FP_Yeetus_Imp.elf  |tee "FP_Yeetus_Imp.elf.size"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS)$(ELFSIZE) FinalProject_Imp.elf
+	-$(RM) $(CC_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS)$(ELFSIZE) FP_Yeetus_Imp.elf
 	-@echo ' '
 
 secondary-outputs: $(ELFSIZE)

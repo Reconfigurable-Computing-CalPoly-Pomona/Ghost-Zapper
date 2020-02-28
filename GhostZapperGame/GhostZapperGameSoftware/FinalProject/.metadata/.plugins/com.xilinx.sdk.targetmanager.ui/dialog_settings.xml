@@ -6,5 +6,5 @@
 	<item value="Auto Detect" key="mcs_top_complete_hw_platform_0-device"/>
 	<item value="false" key="mcs_top_complete_hw_platform_0-partial_bit"/>
 	<item value="mcs_top_complete.bit" key="mcs_top_complete_hw_platform_0-bitFile"/>
-	<item value="C:\Users\domin\OneDrive\Homework\ECE_4305_Software\FinalProject\FinalProject_Imp\Debug\FinalProject_Imp.elf" key="mcs_top_complete_hw_platform_0-microblaze_I-initElf"/>
+	<item value="C:\Users\Dominic\OneDrive\Homework\ECE_4305_Software\FinalProject_Yeetus\FP_Yeetus_Imp\Debug\FP_Yeetus_Imp.elf" key="mcs_top_complete_hw_platform_0-microblaze_I-initElf"/>
 </section>

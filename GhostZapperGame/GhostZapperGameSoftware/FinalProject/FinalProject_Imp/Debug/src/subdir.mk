@@ -9,6 +9,7 @@ LD_SRCS += \
 CPP_SRCS += \
 ../src/adsr_core.cpp \
 ../src/chu_init.cpp \
+../src/ctimer_core.cpp \
 ../src/ddfs_core.cpp \
 ../src/gpio_cores.cpp \
 ../src/i2c_core.cpp \
@@ -24,6 +25,7 @@ CPP_SRCS += \
 OBJS += \
 ./src/adsr_core.o \
 ./src/chu_init.o \
+./src/ctimer_core.o \
 ./src/ddfs_core.o \
 ./src/gpio_cores.o \
 ./src/i2c_core.o \
@@ -39,6 +41,7 @@ OBJS += \
 CPP_DEPS += \
 ./src/adsr_core.d \
 ./src/chu_init.d \
+./src/ctimer_core.d \
 ./src/ddfs_core.d \
 ./src/gpio_cores.d \
 ./src/i2c_core.d \
@@ -56,7 +59,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MicroBlaze g++ compiler'
-	mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -I../../FinalProjectbsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -I../../FP_Yeetus_BSP/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
