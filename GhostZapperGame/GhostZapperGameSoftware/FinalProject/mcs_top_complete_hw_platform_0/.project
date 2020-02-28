@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>mcs_top_complete_hw_platform_0</name>
+	<comment>Created by SDK v2019.1</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>com.xilinx.sdk.hw.HwProject</nature>
+	</natures>
+	<filteredResources>
+		<filter>
+			<id>1575322015300</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*.xml</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1575322015311</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*.svd</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1575322015321</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*.hwh</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

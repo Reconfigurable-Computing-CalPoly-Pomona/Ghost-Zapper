@@ -1,0 +1,21 @@
+14:11:32 **** Incremental Build of configuration Debug for project FinalProject_Imp ****
+make all 
+make: Nothing to be done for 'all'.
+15:51:20 **** Auto Build of configuration Debug for project FinalProject_Imp ****
+make all 
+'Building file: ../src/main_video_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_video_test.o" -I../../FinalProjectbsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_video_test.d" -MT"src/main_video_test.o" -o "src/main_video_test.o" "../src/main_video_test.cpp"
+'Finished building: ../src/main_video_test.cpp'
+' '
+'Building target: FinalProject_Imp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../FinalProjectbsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FinalProject_Imp.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_video_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: FinalProject_Imp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FinalProject_Imp.elf  |tee "FinalProject_Imp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21048	   1324	   2212	  24584	   6008	FinalProject_Imp.elf
+'Finished building: FinalProject_Imp.elf.size'
+' '

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="mcs_top_complete.mmi" key="mcs_top_complete_hw_platform_0-bmmFile"/>
+	<item value="Local" key="mcs_top_complete_hw_platform_0-target"/>
+	<item value="mcs_top_complete_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="mcs_top_complete_hw_platform_0-device"/>
+	<item value="false" key="mcs_top_complete_hw_platform_0-partial_bit"/>
+	<item value="mcs_top_complete.bit" key="mcs_top_complete_hw_platform_0-bitFile"/>
+	<item value="C:\Users\domin\OneDrive\Homework\ECE_4305_Software\FinalProject\FinalProject_Imp\Debug\FinalProject_Imp.elf" key="mcs_top_complete_hw_platform_0-microblaze_I-initElf"/>
+</section>

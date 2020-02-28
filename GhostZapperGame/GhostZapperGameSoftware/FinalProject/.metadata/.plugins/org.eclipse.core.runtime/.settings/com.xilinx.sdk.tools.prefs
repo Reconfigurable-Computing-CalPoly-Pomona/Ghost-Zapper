@@ -1,0 +1,13 @@
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.bss=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.data=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.rodata=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.sbss=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.sbss2=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.sdata=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.sdata2=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:.text=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:heap=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:stack=ilmb_cntlr_Mem_dlmb_cntlr_Mem
+com.xilinx.sdk.linkgen.prefs.FinalProject_Imp\:stack-size=1024
+eclipse.preferences.version=1

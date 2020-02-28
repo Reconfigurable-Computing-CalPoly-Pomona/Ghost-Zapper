@@ -1,0 +1,4 @@
+THIRPARTY=false
+HW_PROJECT_REFERENCE=mcs_top_complete_hw_platform_0
+PROCESSOR=microblaze_I
+MSS_FILE=system.mss
